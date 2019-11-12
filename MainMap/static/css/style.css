@@ -1,0 +1,324 @@
+/* Спецификация */
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  padding-top: 13px;
+  background: #183e54;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+footer{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #183e54;
+  color: #ffb096;
+  list-style-type: none;
+}
+
+h5{
+  font-weight: 700;
+}
+
+.list-none{
+  list-style-type: none;
+}
+
+.bg_orange{
+  background-color: #f78a49fa;
+}
+
+.bg-picture{
+  background: #666 url(../img/BgfotMap.jpg) round;
+    padding-bottom: 100px;
+    padding-top: 50px;
+
+}
+
+.padd_left{
+  padding-left: 25px;
+}
+
+.vertical-center{
+  margin: auto 0;
+}
+
+.kontur{
+  text-shadow:
+			0.5px 1px #000;
+}
+
+/* Первый экран */
+
+.logo__pict{
+  width: 80px;
+  height: 50px;
+}
+
+.logo__title{
+  font-weight: 700;
+  font-size: 30px;
+  color: #ffb096;
+  font-family: 'Indie Flower', cursive;
+}
+
+.menu{
+  font-size: 30px;
+}
+
+.menu__item a{
+  color: #f78a49fa;
+  padding-right: 45px;
+}
+
+.menu__sign{
+  color: #f78a49fa;
+  padding-right: 25px;
+}
+
+/* Второй экран */
+
+.city-photo{
+  background: #f78a49fa url(../img/city_photo.jpg) round;
+  min-width: 100%;
+  height: 650px;
+}
+
+.descrip__title{
+  padding-top: 85px;
+  padding-bottom: 50px;
+  color: #c7762e;
+  text-transform: uppercase;
+}
+
+.descrip__btn a{
+  color: #4e0202;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.de_kaart{
+  font-family: 'Indie Flower', cursive;
+}
+
+.footer__{
+  display: flex!important;
+}
+
+.footer__ul{
+  display: flex!important;
+}
+
+/* Третий экран */
+
+.features{
+  padding-top: 50px;
+  background: #f78a49fa;
+  padding-bottom: 85px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.features__title{
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 50px;
+  margin: auto;
+}
+
+.features__body{
+  font-size: 18px;
+  text-align: center;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.features_block{
+  width: 100%;
+  color: #fff;
+  background: #f78a49fa;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 35px;
+  padding-left: 35px;
+}
+
+.features_block_icon{
+  font-size: 35px;
+  padding-right: 15px;
+}
+
+.features_block_body{
+  width: 260px;
+}
+
+.map-sign a{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: #fff;
+  background: #8a3535;
+}
+
+.map-sign a:hover{
+  background: #6d3b3b;
+}
+
+/* Футер */
+
+.footer__icon{
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+}
+
+.footer-logo__title{
+  font-weight: 700;
+  font-size: 30px;
+  color: #ffb096;
+  font-family: 'Indie Flower', cursive;
+}
+/* categories.html/category.html */
+.category-list{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 35px;
+}
+
+.category-list a{
+  color: #dc590a;
+
+}
+
+.category-icon-set{
+  width: 80px;
+  height: 80px;
+}
+
+/* Map.html */
+
+.map-canvas{
+  border: 2px solid #000;
+  width: 750px;
+  height: 750px;
+  padding: 0;
+
+}
+
+/* sight.html */
+
+.sight{
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.sight__photo{
+  width: 700px;
+  height: 500px;
+
+}
+
+.sight__names{
+  padding-left: 25px;
+}
+
+.sight_descrip{
+    padding-top: 25px;
+    text-align: center;
+}
+
+/* Media quares */
+
+@media screen and (max-width: 920px){
+  .features{
+    margin: auto;
+    width: 100%;
+  }
+  .features__body{
+    width: 100%;
+  }
+
+  .features_block_body{
+    width: auto;
+  }
+
+  .menu__item a{
+    padding-right: 0;
+  }
+
+  .category-list{
+    font-size: 25px;
+  }
+
+  .map-sign a{
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-left: auto;
+    padding-right: auto;
+  }
+
+  .w-auto{
+    width: auto;
+  }
+
+  .footer__{
+    width: auto;
+    margin: auto;
+  }
+
+  .footer__q{
+    display: block!important;
+  }
+
+  .footer-logo__title{
+    padding-bottom: 25px;
+    font-size: 35px;
+  }
+
+  .footer__ul{
+    display: block!important;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  .footer__li{
+    padding-bottom: 20px;
+  }
+
+  .footer__icon{
+    width: 60px;
+    height: 60px;
+  }
+
+  .menu{
+    display: block!important;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .center{
+    margin: auto;
+  }
+
+  .footer-logo__title{
+    text-align: center;
+  }
+
+  .city-photo{
+    background: #183e54;
+  }
+
+  body{
+    height: auto;
+  }
+}

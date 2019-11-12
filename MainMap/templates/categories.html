@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="bg-picture">
+
+  <div class="container">
+      <div class="row w-auto">
+
+        <div class="col-md-12">
+          <ul class="list-none">
+
+            {% for category in categories %}
+              <div class="category-list">
+                <a href="{% url 'MainMap:category' category.name %}" class="d-flex">
+                  <img src="{{category.icon.url}}" alt="{{category.human_name}}" class="category-icon-set"/>
+                  <li class="padd_left vertical-center kontur">
+                    {{ category.human_name }}
+                  </li>
+                </a>
+              </div>
+            {% empty %}
+              <li class="">
+                <p>
+                  There are no category added yet.=(
+                </p>
+              </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock content %}

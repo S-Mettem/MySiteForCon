@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="bg-picture">
+  <div class="container">
+    <div class="row ml-auto">
+      <div class="col-md-12 map-canvas" id="map"></div>
+    </div>
+  </div>
+</section>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=44e8e8c3-36f5-4fb0-9084-9df8a12ef4e7" type="text/javascript"></script>
+<script type="text/javascript" src="{% static 'js/yandex_map.js' %}"></script>
+{% endblock content %}

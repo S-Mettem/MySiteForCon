@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Page</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row center ml-auto">
+        <div class="col-md-7 w-auto">
+          <a href="{% url 'MainMap:home' %}" class="d-flex">
+            <img src="{% static 'img/logo.png' %}" class="logo__pict" alt="logotype">
+            <p class="logo__title">De Kaart</p>
+          </a>
+        </div>
+
+        <nav>
+          <div class="col-md-8">
+            <ul class="menu list-none d-flex justify-content-center">
+              <li class="menu__item">
+                <a href="{% url 'MainMap:map' %}">Карта</a>
+              </li>
+              <li class="menu__item">
+                <a href="{% url 'MainMap:categories' %}">Категории</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  {% block content %} {% endblock content %}
+
+  <footer>
+    <div class="container">
+      <div class="row footer__">
+        <div class="col-md-12 d-flex footer__q">
+          <h5 class="footer-logo__title">
+            Ссылки:
+          </h5>
+          <ul class="footer__ul list-none">
+            <li class="footer__li">
+              <a href="#">
+                <img src="{% static 'img/vk.png' %}" alt="vk" class="footer__icon">
+              </a>
+            </li>
+            <li class="footer__li">
+              <a href="#">
+                <img src="{% static 'img/facebook.png' %}" alt="facebook" class="footer__icon">
+              </a>
+            </li>
+            <li class="footer__li"
+              <a href="#">
+                <img src="{% static 'img/twitter.png' %}" alt="twitter" class="footer__icon">
+              </a>
+            </li>
+            <li class="footer__li">
+              <a href="#">
+                <img src="{% static 'img/instach.png' %}" alt="instagram" class="footer__icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

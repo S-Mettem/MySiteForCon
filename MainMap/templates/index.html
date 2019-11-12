@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <section class="city-photo w100">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 ml-auto">
+          <h1 class="text-center descrip__title">
+            Knowledge is power. Explore your city with
+            <p class="de_kaart">De Kaart</p>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg_orange">
+    <div class="container">
+      <div class="row features">
+        <div class="col-md-12">
+          <h1 class="features__title">
+            Our Features
+          </h1>
+          <p class="features__body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 d-flex features_block">
+          <i class="fa fa-pencil features_block_icon"></i>
+          <div class="features_block_body">
+            <h4>Main Title</h4>
+            <p class="features_block_body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="col-md-4 features_block d-flex">
+          <i class="fa fa-pencil features_block_icon"></i>
+          <div class="features_block_body">
+            <h4>Main Title</h4>
+            <p class="features_block_body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class="col-md-4 features_block d-flex">
+          <i class="fa fa-pencil features_block_icon"></i>
+          <div class="features_block_body">
+            <h4>Main Title</h4>
+            <p class="features_block_body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row features">
+        <div class="col-md-12">
+          <h4 class="map-sign">
+            <a href="{% url 'MainMap:map' %}">Перейти на карту</a>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock content %}

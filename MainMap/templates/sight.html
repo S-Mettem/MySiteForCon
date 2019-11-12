@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <section class="bg-picture">
+
+    <div class="container">
+      <div class="row">
+
+          <div class="col-md-12 d-flex">
+              <img src="{{ sight.photo.url }}" alt="{{ sight.human_name }}" class='sight__photo'>
+              <div class="sight__names">
+                  <h4>Название: {{sight.human_name}}</h4>
+                  {% if sight.price == 0 %}
+                    <h4>Вход бесплатный</h4>
+                  {% else %}
+                    <h4>Цена: {{sight.price}}</h4>
+                  {% endif %}
+                  <h4>Адрес: {{sight.address}}</h4>
+                  {% if sight.longitude == '00.00000000' %}
+                    <h4>Увы, координат нет =(</h4>
+                  {% else %}
+                    <h4>Координаты: {{sight.longitude}}, {{sight.latitude}}</h4>
+                  {% endif %}
+
+                  {% if sight.web == None or sight.web == '' %}
+                    <h4>Увы, сайта нет =(</h4>
+                  {% else %}
+                    <h4>Сайт: {{sight.web}}</h4>
+                  {% endif %}
+
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="sight_descrip">
+            <p>{{sight.description}}</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock content %}
